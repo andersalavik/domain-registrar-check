@@ -88,8 +88,9 @@ class CheckDomain(object):
             self.DOMAINS[domain] = self.domainCheck(domain)
             
     def jsonOut(self):
-        logging.debug('Printar JSON')
+        logging.debug('Outputs JSON Start')
         print(json.dumps(self.DOMAINS,indent = 4))
+        logging.debug('Outputs JSON Stop')
         
             
         
