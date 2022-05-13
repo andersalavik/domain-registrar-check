@@ -9,7 +9,7 @@ for domain in domains.readlines():
 	print('')
 	print('Kontrollerar:',domain.strip('\n'))
 	try:
-		w = whois.whois(domain.strip('\n'))
+		w = whois.whois(domain.strip('\n')
 		print('Registrar:',w['registrar'])
 		print('Status:',w['status'])
 		print('Name server:',w['name_servers'])
